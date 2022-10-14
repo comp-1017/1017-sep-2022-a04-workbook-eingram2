@@ -1,0 +1,128 @@
+footer {
+    background-color: #333;
+    color: yellow;
+}
+
+/* 
+    make a specific class with your css rule
+*/
+.nav-background {
+    background-color: #ddd;
+}
+/* 
+    use descendant selectors
+    you use a drill down approach to isolating the hmtl you wish to apply your rules
+
+    example
+    within the nav area, the url is to get the following rules
+*/
+ul {
+    background-color: #ddd;
+}
+
+/* 
+    We can specify multiple selectors separated by commas for a single declaration 
+*/
+footer,
+footer a {
+    color: white
+}
+
+/* 
+
+    Classes
+
+    syntax for naming is .user-name{rules}
+    you are NOT using element names
+    user name must be meaningful
+    classes can be attaced to any element
+    classes are independant of an element
+
+    Use descendant selectors to be more precise; the following rule applies to any 
+    ul elements that are descendants of nav elements 
+*/
+
+nav ul {
+    background-color: #dddddd;
+}
+
+/* 
+    We can specify any number of descendants; the following rule applies to any li 
+    elemts that are descendants of ul elements, which are themselves descendants
+    of nav elements
+*/
+nav ul li {
+    border-bottom: 1px solid #333333;
+}
+/* child selectors
+
+    this is a element selector within another element that is not necessarily directly below
+    the parent element selector
+
+    upper html element (parent)
+
+    to remove an undelink of an achor tag: text-decoration: none;
+    change the text colour of the anchor tag to #333
+    apply only to the naviagtional menu
+*/
+main p {
+    font-style: italic;
+}
+
+nav ul li a {
+    color: #333333;
+    text-decoration: none;
+}
+/* 
+    make any text in my footer white
+
+    Pseudo classes allow us to target elements in specific states, positions, etc. 
+    In this case, we are targeeting elements in the hover state (i.e. when the mouse 
+    cursor is over them) the order in which you code you pseudo classes for the anchor is EXTREMELY IMPORTANT
+
+    a:link unused link
+    a:hover used when your cursor hovers over the anchor tag link
+    a:visited used when the anchor tag link has been cliked on previously
+    a:active used when you are actually clicking teh anchor tag link
+    */
+
+nav ul li a:hover {
+    color:blue;
+    font-weight: bold;
+    font-size:larger;
+}
+nav ul li a:active{
+    color:red;
+}
+/* 
+    font-weight: bold
+    font-size:larger;
+     
+    Class selectors can be used to be more specific when selecting elemtns and have a higher priority
+    than simple element selectors alone
+*/
+
+ul.navigation {
+    list-style: none;
+    padding-left: 0;
+}
+.bulletremoval {
+    list-style-type: none;
+    padding: 0px
+}
+nav ul.bulletremoval{
+    list-style-type: none;
+    padding: 10px;
+    
+}
+
+/* 
+    targetted class
+    element.classname
+    
+    id selector
+
+    similar to a class selector but is supposed to be used only once on a page where as a class may be used multiple times
+    syntac #user-name{rules}
+    on the html page: id="user-name"
+*/
