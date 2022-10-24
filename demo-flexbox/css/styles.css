@@ -38,11 +38,29 @@ body {
 main{
     background-color: lightgrey;
     display: flex;
+    flex-wrap: wrap;
 }
-/* Default display of elements on page is called "stacked"
-    to get your element on the same line we use something called flexbox 
-    to invoke flexbox, use the rule: 
-        display: flex; */
+/*
+ Default display of elements on page is called "stacked"
+to get your element on the same line we use something called flexbox 
+to invoke flexbox, use the rule: 
+         display: flex;
+    flexbox attempts to palce all elements within its "specified container area"
+     on the same line
+     flexbox will automatically adjust measurements to get all elements
+     to appear on the same line
+     
+    problem: I don't want all elements on the same line.
+             I dont want my measurements adjusted
+    solution: 
+        use flex-wrap: wrap;
+        this will place as many elements as possible on a single row
+            without adjusting the measurements of your element, and 
+            any leftover elements will wrap to the following line
+            until all elements have been displayed
+    flex-wrap affects a flex display area, without the display :flex;
+        flex-wrap is meaningless.
+*/
 main > div{
     height: 200px;
     width: 465px;
@@ -71,6 +89,9 @@ total = 2((one calc per box) left margin (10red 10blue) + no border + no padding
 960 - 30 = 2(content)
 930/2 = content
 465px = content
+
+black bar element
+960 = (20px + 0px + 0px + 940 + 10px + 0px + 0px) 
 */
 
 .red-paint{
