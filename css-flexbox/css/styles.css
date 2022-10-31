@@ -1,11 +1,202 @@
 body {
-    background-color: white;
+    background: rgba(0, 0, 0, 0.01);
+    font-family: Verdana, sans-serif;
 }
 
 .container {
-    margin: 0 auto;
     width: 960px;
+    margin: 0 auto;
     font-size: 100%;
-    line-height: 1.5;;
+    line-height: 1.5
+}
+
+
+/*CLEAR FIX SOLLUTION*/
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+.vertical{
+    background-color: lightgrey;
+    display: flex;
     
+    border: solid 2px black;
+}
+.horizontal{
+    background-color: lightgrey;
+    
+    border: solid 2px black;
+}
+/*
+ Default display of elements on page is called "stacked"
+to get your element on the same line we use something called flexbox 
+to invoke flexbox, use the rule: 
+         display: flex;
+    flexbox attempts to palce all elements within its "specified container area"
+     on the same line
+     flexbox will automatically adjust measurements to get all elements
+     to appear on the same line
+     
+    problem: I don't want all elements on the same line.
+             I dont want my measurements adjusted
+    solution: 
+        use flex-wrap: wrap;
+        this will place as many elements as possible on a single row
+            without adjusting the measurements of your element, and 
+            any leftover elements will wrap to the following line
+            until all elements have been displayed
+    flex-wrap affects a flex display area, without the display :flex;
+        flex-wrap is meaningless.
+*/
+
+.vertical{
+    height: 960px;
+    width: 150px;
+
+}
+
+.horizontal{
+    height: 293px;
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.middle{
+    flex-wrap: wrap;
+    display: flex;
+    
+}
+
+
+
+main{
+    background-color: lightgray;
+    flex-wrap: wrap;
+    display: flex;
+    
+}
+
+
+div{
+    width: 300px;
+}
+
+
+
+
+
+/* since there is no actual content, we wills simulate the conetn with a fixed height value of 200px */
+/* 
+    calculations
+960 = 2(20px + 0px + 0px + 465 + 10px + 0px + 0px) 
+total = 2((one calc per box) left margin (10red 10blue) + no border + no padding + content + right margin + no border + no padding)
+960 = 2(content) + 30
+960 - 30 = 2(content)
+930/2 = content
+465px = content
+
+black bar element
+960 = (20px + 0px + 0px + 940 + 10px + 0px + 0px) 
+
+960 = 3(90px + conent + 60px)
+960 = 3(content) + 150
+960 - 150 =3(content)
+810 = 3(content
+810/30 = content
+270px = content
+
+the height of the right column items can use the same calculations as the horizontal layout
+
+the on item you MUST remember is that the vertical margin (vm) between items are collapsed
+the largest vm is used between any two single items
+
+600 = 2(vm + tb + tp + content + bb + bp) + remainder
+600 = 2(2 + 0 + content + 2 + 0) + 10
+600 = 2(4 + content) + 10
+600 = 18 + 2(content)
+582/2 = content
+291
+
+this only works because the content area of the vertical boxes are equal
+*/
+
+/* left coloumn */
+
+.red-paint{
+    background-color: red;
+    margin: 15px 0px 15px 15px;
+    border: solid 2px black;
+    padding: 10px;
+}
+
+.yellow-paint{
+    background-color: yellow;
+    margin: 15px 0px 15px 15px;
+    border: solid 2px black;
+    padding: 10px;
+}
+
+/* right column */
+
+.blue-paint{
+    background-color: blue;
+    margin: 15px 0px 15px 15px;
+    border: solid 2px black;
+
+    padding: 10px;
+}
+/* middle */
+.green-paint{
+    background-color: green;
+    margin: 15px 0px 15px 15px;
+    border: solid 2px black;
+    padding: 10px;
+}
+
+.white-paint{
+    background-color: white;
+    margin: 15px 0px 15px 15px;
+    border: solid 2px black;
+    padding: 10px;
+}
+/* footer */
+
+.black-paint{
+    background-color: black;
+    width: 940px;
+    height: 50px;
+    margin: 0px 15px 15px 15px; 
+    padding: 10px;   
+}
+
+
+
+footer{
+    background-color: lightgrey;
+    height: 0px;
+    display: flex;
+    padding: 10px;
+}
+
+h1{
+    font-weight: bold;
 }
