@@ -7,4 +7,54 @@ body {
 	width:960px;
 	font-size: 100%;
 	line-height: 1.5;
+	font-family: verdana, Arial, Helvetica, sans-serif;
+	color: #333333;
+	
 }
+
+h1{
+	font-weight: bold;
+	font-size: 24px;
+}
+
+h2{
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.site-header{
+	margin-top: 15px;
+}
+
+.site-header nav {
+	margin: 15px 0;
+}
+
+.site-header nav li{	
+	width: 170px;
+	margin-left: 15px;
+	border: 2px solid #333333;
+	text-align: center;
+}
+
+.menu{
+	display: flex;
+}
+
+main{
+	display: flex;
+}
+
+main section{
+	width: 423.5px;
+	border: 2px solid #333333;
+	margin-left: 15px;
+	margin-top: 15px;
+	padding: 15px;
+}
+
+/* lm + lp + lb + content + rm + rp + rb
+960 = 75px +  */
+
+
+

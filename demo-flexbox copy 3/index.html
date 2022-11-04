@@ -16,9 +16,17 @@
         <header>
             <h1>Flexbox III</h1>
         </header>
+        <!-- the flexbox is on main
+                therefore the element immediately within main  
+                are flexed -->
         <main>
             <div class="red-paint vertical"></div>
             <div>
+                <!-- the item within ths iv are not immediately under main
+                the items within this div are immediately under the div
+                these items are NOT affected by the main flex box
+                therefore, these items are default stacked
+                 -->
                 <div class="blue-paint horizontal"></div>
                 <div class="yellow-paint horizontal"></div>
             </div>
