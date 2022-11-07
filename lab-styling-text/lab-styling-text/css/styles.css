@@ -1,0 +1,83 @@
+body {
+    background-color: #f0efed;
+    color: #3e3e44;
+}
+
+.container {
+    margin: 0 auto;
+    width: 960px;
+    font-size: 100%;
+    line-height: 1.5;
+    
+}
+
+h1{
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Vesper Libre', serif;
+    size: 96px;
+    padding-top: 96px;
+}
+
+h2{
+    font-family: 'Miriam Libre', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 48px;
+}
+
+p{
+    font-family: 'Miriam Libre', sans-serif;
+    font-style: italic;
+    color: #3e3e44;
+    font-size: 16px;
+    padding-bottom: 12px;
+}
+
+h3{
+    font-family: 'Vesper Libre', serif;
+    color: #84696f;
+    font-size: 24px;
+    padding-top: 96px;
+}
+
+main section div p{
+    font-family: 'Miriam Libre', sans-serif;
+    color: #6e6e79;
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 12px;
+}
+
+.intro {
+    font-family: 'Miriam Libre', sans-serif;
+    font-size: 18px;
+    padding-top: 48px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  h4{
+    font-family: 'Vesper Libre', serif;
+    color: #84696f;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 96px;
+  }
+
+  footer{
+    padding-top: 96px;
+  }
+
+  .byline{
+    color: #6e6e79;
+  }
+
+/* font-family: 'Vesper Libre', serif;
+    font-family: 'Miriam Libre', sans-serif; */
