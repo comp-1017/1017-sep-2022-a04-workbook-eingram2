@@ -7,5 +7,110 @@ body {
 	width: 960px;
 	font-size: 100%;
 	line-height: 1.5;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
 }
 
+/* the default fill for background is repeat
+repeat is in both x and y axis
+repeat-x only along x axis
+repeat-y only along y axis
+none  */
+.page-header{
+	background-image: url(../img/header-background.png);
+}
+
+.hidden{
+	display: none;
+}
+/* typography */
+/* convert pt to pixel
+	pt * 1.3333 = px
+	48 * 1.3333 = 64px
+*/
+
+h2, footer p, h3{
+	color: #0b777b;
+}
+
+section > p{
+	color: #7f8c8c;
+}
+
+h2{
+	font-size: 60px;
+}
+
+h3{
+	font-size: 45px;
+}
+
+section{
+	margin-top: 70px;
+}
+
+section footer{
+	margin-top: 24px;
+}
+
+section footer span{
+	margin: 0 20px;
+}
+
+.footer-margin{
+	margin: 100px 0px;
+}
+
+strong{
+	color: #094244;
+	font-weight: bold;
+}
+
+h2, body main section img{
+	margin-bottom: 0px;
+}
+
+p{
+	margin-top: 0px;
+}
+
+footer h3{
+	font-size: 48px;
+}
+
+section > p{
+	color: #7f8c8c;
+	font-size: 22px;
+}
+
+span{
+	font-size: 18.6px;
+	color: #378184;
+	font-weight: bolder;
+}
+
+section footer img{
+	vertical-align: middle;
+}
+/* layout */
+
+section{
+	margin-top: 70px;
+}
+
+/* element1 element2 syntax means any element2 regardless of
+	nesting is affected  */
+
+footer img{
+	margin: 0px 5px;
+}
+
+/* element1 > element2 syntax means any element2 immediately with element 1 (next level) is affected  */
+
+main > footer{
+	margin: 70px 0px 24px 0px;
+}
+
+h2, h3{
+	color: #0b777b;
+}
